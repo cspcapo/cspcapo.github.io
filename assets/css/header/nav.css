@@ -1,0 +1,99 @@
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:focus,
+a:link {
+    color: white;
+}
+
+li {
+    display: inline-block;
+    background-color: cadetblue;
+    padding: 10px 30px;
+    margin: 0 2rem 0 2rem;
+}
+
+li:hover {
+    background-color: #777;
+    cursor: pointer;
+}
+
+#navegador {
+    display: inline-block;
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+main {
+    height: 70vh;
+    text-align: center;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/686/4/955/my-neighbor-totoro-sky-clouds-susuwatari-wallpaper-preview.jpg");
+    background-size: contain;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+#container {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    bottom: 25%;
+    display: block;
+}
+
+#flipper {
+    height: 60px;
+    overflow: hidden;
+}
+
+#flipper > div > div {
+    color: #fff;
+    padding: 4px 12 px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+#flipper div:first-child {
+    animation: show 5s linear infinite;
+}
+#flipper div div {
+    background: #42c58a;
+}
+#flipper div:first-child div {
+    background: #4ec7f3;
+}
+#flipper div:last-child div {
+    background: #dc143c;
+}
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+    5% {
+        margin-top: -180px;
+    }
+    33% {
+        margin-top: -180px;
+    }
+    38% {
+        margin-top: -90px;
+    }
+    66% {
+        margin-top: -90px;
+    }
+    71% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
