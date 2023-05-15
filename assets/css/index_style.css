@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}   
+.body-container{   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+   
+}
+.header{
+    grid-column: spam 4;
+    grid-row: span 1;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display: flex;
+    
+    /* FLEX */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nav-header{
+    background-color: var(--header-azul);
+    /* Grid */
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.nav-header ul{
+    top: 0px;
+}
+
+.nav-header  ul li{
+    justify-content: center;
+    border-radius: 5px; 
+    background-color: var(--menu-azul); 
+    width: 140px;
+    height: 30px;   
+    margin:3px;
+    display: flex;    
+    text-decoration: none;
+    color: black;
+    
+}
+.nav-header ul li:hover{
+    z-index: 1;
+    background-color:  rgba(17, 138, 178, 1);
+    box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
+
+}
+/* **********MAIN*************************** */
+main{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+
+}
+/* /*Menu desplegable lateral
+hasta linea 93  */
+.container{
+    width: 153px;
+    height: 188px;
+    background-color: rgba(6, 214, 160, .4);
+    padding: 10px;
+    margin: 7px;
+    border-radius: 5px;
+    position:fixed;
+    /*Grid*/
+   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:[l1] 1fr [l2] 1fr [l3] 1fr
+}
+.container div{
+    font-size: large;
+    text-align: center;
+    border-radius: 5px;
+
+    
+    background-color: var(--menu-azul);
+    margin: 3px;
+    padding: 5px;
+    
+    
+}
+
+/* HOVER */
+.container div:hover{
+    z-index: 1;
+    background-color:  rgba(17, 138, 178, 1);
+    box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
+
+}
+
+/* centro con imagenes */
+.center{
+    /* height: calc(var(--sise-root)*2);
+    left: calc(var(--sise-root)*3); */
+    /* Flex */
+    /* justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; */
+
+
+    /*GRID*/
+    
+    /* display:grid;
+    grid-template-columns: [l1] 1fr [l2] 1fr [l3] 1fr;;
+    grid-template-rows:1fr ; */
+
+}
+.center div{
+    position: relative;
+    top:0;
+    /* left: calc(var(--sise-root)*3);  */
+    
+    display: flex;
+    width: calc(var(--sise-root)*5);
+    height: calc(var(--sise-root)*14);
+    /* overflow:hidden; */
+    border-style: solid;
+    
+}
+.primero{
+    background-image: url("/assets/media/img/rio-1.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* *********FOOTER********************* */
+footer{
+    display: grid;
+    grid-area: footer;
+    grid-row-start: 3;
+}
+ */

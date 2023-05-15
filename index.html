@@ -1,39 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/header/nav.css" />
-        <title>NAV BAR</title>
-    </head>
-    <body>
-        <header>
-            <nav id="navegador">
-                <div id="container">
-                    programar es:
-                    <div id="flipper">
-                        <div>
-                            <div>codigo</div>
-                        </div>
-                        <div>
-                            <div>desafio</div>
-                        </div>
-                        <div>
-                            <div>recurso</div>
-                        </div>
-                    </div>
-                    dale gas!
-                </div>
-                <ul>
-                    <li><a href="#" class="nav-link">INICIO</a></li>
-                    <li><a href="#" class="nav-link">CONTACTO</a></li>
-                    <li><a href="#" class="nav-link">NOSOTROS</a></li>
-                    <li><a href="#" class="nav-link">SERVICIOS</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main></main>
-        <footer></footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/index_styles.css">
+    <title>TURISMO</title>
+</head>
+<body class = "body-container">
+    <header class="header">
+        
+        <nav class="nav-header">
+            <h1>GENERAL TURISMO</h1>
+                <li><a href="./assets/pages/servicios.html">SERVICIOS</a></li>
+                <li><a href="./assets/pages/promociones.html">PROMOCIONES</a></li>
+                <li><a href="./assets/pages/nosotros.html">EMPRESA</a></li>
+                <li><a href="./assets/pages/contacto.html">CONTACTO</a></li>    
+        
+            </ul>
+        </nav>
+        <!-- Munu Hambuguesa -->
+        <!-- <button onclick="abrirLista()" class="menuToggle" aria-controls="primary-menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="screen-reader-text">Menú</span>
+          </button> -->
+          <!--************************  -->
+    </header>
+    <main class="main">
+        <div class="section-img">
+			<div class ="rio" onclick="mostrarPromo1()"><p>Viaja por el mundo...</p></div>
+			<div class="huma" onclick="mostrarPromo2()"><p>Experiencias inolvidables...</p></div>
+			<div class="vuelos" onclick="mostrarPromo3()" ><p>Quere volar barato... </p></div>
+			<div class="escapadas" onclick="mostrarPromo4()" ><p>Escapaditas, el tiempo no es una excusa...</p></div>
+			
+		</div>
+        <nav class="nav-index">
+            <div class="container">                
+                    <div><a href="./assets/pages/servicios.html">SERVICIOS</a></div>
+                    <div><a href="./assets/pages/promociones.html">PROMOCIONES</a></div>
+                    <div><a href="./assets/pages/nosotros.html">EMPRESA</a></div>
+                    <div><a href="./assets/pages/contacto.html">CONTACTO</a></div>    
+                
+                
+            </div>
+        </nav>
+        <!-- <div class="img-container">
+            <div class="uno">primero</div>
+            <div class="dos">segundo</div>
+            <div class ="tres">tercero</div>
+        </div>     -->
+    </main>
+</body>
+<footer class="footer">
+    <nav class="nav-footer">
+        <ul>
+            <li><a href="./assets/pages/servicios.html">SERVICIOS</a></li>
+            <li><a href="./assets/pages/promociones.html">PROMOCIONES</a></li>
+            <li><a href="./assets/pages/nosotros.html">EMPRESA</a></li>
+            <li><a href="./assets/pages/contacto.html">CONTACTO</a></li>    
+    
+        </ul>
+    </nav>
+        
+    ®Grupo 19 comicion 23031
+
+</footer>
 </html>
