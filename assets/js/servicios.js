@@ -1,5 +1,7 @@
 
 function mostrarPromo1(){
+    
+
     document.getElementById("txt-promo").innerHTML ="¿Te has imaginado recorriendo el mundo y conociendo culturas diferentes? ¡Hazlo realidad con nuestra agencia de viajes! Tenemos los mejores paquetes turísticos para que puedas recorrer los lugares más fascinantes del mundo. ¡No te pierdas esta aventura!" ;
 
 }

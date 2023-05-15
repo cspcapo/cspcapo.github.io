@@ -3,7 +3,7 @@ body{
     padding: 0;
     }
     
-    .body-container{
+.body-container{
         margin: 0;
         padding:0;
         height: 100vh;
@@ -12,7 +12,9 @@ body{
         grid-template-rows: 22% auto 16%;
     
     }
-
+h2{
+    display: none;
+}
 /* HEADER  */
 .header{
     background-color:rgba(6, 214, 160, .4); 
@@ -130,6 +132,7 @@ p{
     background-image: url("/assets/media/img/escapadas-1.png");
 }
 .section-img div{
+
     border-color: aqua;
     border-width: 8px;
     border-left-style:  solid;
@@ -233,33 +236,75 @@ p{
     }
 
 }
+/* ***************************************** */
 @media screen and (max-width:360px){
-    .container{
-        visibility:hidden;
-        width: 0px;
-        margin-top: 0px;
-    }
-    .body-container{
-        justify-items: center;
+   .body-container {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 15% auto 10%;
         align-items: baseline;
         justify-content: space-evenly;
-        align-content: center;
-         
+        align-content: stretch;
+        justify-items: stretch;
     }
-    .section-img div{
-        border-color: aqua;
-        border-width: 8px;
-        border-right-style:  solid;
-        border-left-style: solid;
-        border-radius: 5px;
-        width: 350px;
-        height: 50px;
-            
-        transition: 1s;
+    h2{
+        position:absolute;
+        left: 20%;
+        display: inline;
+    }
+    .nav-header h1,
+    .container,
+    .footer{
+        display: none;
+    }
+    #promo{
+        left:5%;
+        bottom:0%;
+        width: 90vh;
+        position:absolute;
+        background-color: var(--footer-arena);
+    }  
+    #txt-promo{
+        color:black;
+        font-family: sans-serif;
+        display: inline;
+        padding: 8px;
         flex-direction: column;
     }
+   
+    main{
+        height: 100%;       
+        
+    } 
+    .section-img div{
+        left:0;
+        margin-right: 1px;
+        border-right-color: aqua;
+        
+    }
     .section-img div:hover{
-        height: 95px;
+        
+        flex-grow: 1;
+        opacity: 1;
+        filter: contrast(120%);
+    
+    
+    }
+    .section-img {
+    width: 357px;
+    height: 380px;
+    margin-top: 10px;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
     }
     
+
 }
