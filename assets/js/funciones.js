@@ -1,6 +1,5 @@
-const menuToggle = document.getElementById('hamburger-btn');
-const mainMenu = document.getElementById('main-menu');
+var menuList = document.getElementById("menuList");
 
-menuToggle.addEventListener('click', function() {
-    mainMenu.classList.toggle('active');
-});
+function toggleMenu() {
+  menuList.classList.toggle("responsive");
+}
