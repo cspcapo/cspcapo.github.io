@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style1.css">
+    <link rel="stylesheet" href="./assets/css/index_styles.css">
+    <link rel="icon" href="./assets/media/img/turismo.ico">
+    <title>INDEX</title>
+</head>
+<body class = "body-container">
+    <header class="header">
+       <h2>GENERAL TURISMO</h2>
+        <nav class="nav-header">
+            <center><h1>GENERAL TURISMO (INDEX)</h1></center>
+            <ul>
+                <li><a href="./assets/pages/servicios.html" >SERVICIOS</a></li>
+                <li><a href="./assets/pages/promociones.html">PROMOCIONES</a></li>
+                <li><a href="./assets/pages/nosotros.html">EMPRESA</a></li>
+                <li><a href="./assets/pages/contacto.html">CONTACTO</a></li>    
+        
+            </ul>
+        </nav>
+        <!-- Munu Hambuguesa -->
+        <button onclick="abrirLista()" class="menuToggle" aria-controls="primary-menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="screen-reader-text">Menú</span>
+          </button>
+          <!--************************  -->
+    </header>
+    <main class="main">
+        <div class="section-img">
+			<div class ="rio" onclick="mostrarPromo1()"><p>Viaja por el mundo...</p></div>
+			<div class="huma" onclick="mostrarPromo2()"><p>Experiencias inolvidables...</p></div>
+			<div class="vuelos" onclick="mostrarPromo3()" ><p>Queres volar barato... </p></div>
+			<div class="escapadas" onclick="mostrarPromo4()" ><p>Escapaditas, el tiempo no es una excusa...</p></div>
+			
+		</div>
+        <nav class="nav-index">
+            <div class="container">                
+                    <div><a href="./assets/pages/servicios.html">SERVICIOS</a></div>
+                    <div><a href="./assets/pages/promociones.html">PROMOCIONES</a></div>
+                    <div><a href="./assets/pages/nosotros.html">EMPRESA</a></div>
+                    <div><a href="./assets/pages/contacto.html">CONTACTO</a></div>    
+                
+                
+            </div>
+        </nav>
+        
+    </main>
+</body>
+<button class="btn-3d" onclick="getLocation()">CLIMA</button>
+    <p id="city"></p>
+    <p id="temp"></p>
+    <p id="pron"></p>
+    <p id="demo"></p>
+
+<script src="./assets/js/clima.js"></script>
+<script src="./assets/js/funciones.js"></script>
+
+<footer class="footer">
+    <ul>
+        ®Grupo 19 comisión 23031   -   todos los derechos reservados
+    </ul>   
+
+</footer>
+</html>
