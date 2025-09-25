@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Página en construcción</title>
+<link rel="icon" href="favicong" type="image/x-icon">
+<style>
+/* Reset mínimo */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+
+
+body{
+font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+background: linear-gradient(180deg,#2661b9 0%, #1b7557 100%);
+color:#1f2937;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:24px;
+}
+
+
+.wrapper{
+max-width:1000px;
+width:100%;
+text-align:center;
+background: rgba(255,255,255,0.8);
+padding:32px;
+border-radius:12px;
+box-shadow:0 8px 30px rgba(31,41,55,0.08);
+}
+
+
+h1{font-size:clamp(20px,3vw,32px);margin-bottom:12px}
+p.lead{font-size:clamp(14px,1.6vw,18px);color:#374151;margin-bottom:22px}
+
+
+/* Imagen responsiva */
+.img-wrap{
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 18px auto;
+width:100%;
+}
+
+
+.img-wrap img{
+/* Ajustes que hacen que la imagen sea totalmente responsiva */
+max-width:420px; /* tamaño máximo en escritorio */
+width:min(80%,420px); /* en pantallas pequeñas ocupará hasta 80% */
+height:auto; /* mantener relación de aspecto */
+display:block;
+}
+
+
+/* Botón de contacto simple */
+.actions{margin-top:12px}
+.btn{
+display:inline-block;
+text-decoration:none;
+padding:10px 18px;
+border-radius:8px;
+background:#0ea5a4;
+color:white;
+font-weight:600;
+}
+
+
+/* Pequeños ajustes para accesibilidad */
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrapper" role="main">
+<h1>Página en construcción</h1>
+<p class="lead">Estamos trabajando para ofrecerte una mejor experiencia. Nos vemos pronto.</p>
+
+
+<div class="img-wrap">
+<!--
+Coloca tu imagen PNG en la misma carpeta que este archivo HTML y nómbrala "construccion.png"
+Si quieres usar otro nombre, modifica el atributo src abajo.
+-->
+<img src="construccion.png" alt="Página en construcción" loading="lazy">
+</div>
+
+
+<div class="actions">
+<a class="btn" href="index.html"">Volver</a>
+</div>
+</main>
+</body>
+</html>
