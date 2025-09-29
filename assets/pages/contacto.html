@@ -23,24 +23,29 @@
     <section class="wrapper">
       <h2>Contacto</h2>
       <p class="lead">Envianos tu consulta completando el formulario.</p>
-      <form
-  action="https://formspree.io/f/xanpndeg"
-  method="POST" class="form-contacto"
->
-<label for="nombre">Nombre:</label>
-<input type="text" id="nombre" name="nombre" required>
 
-<label for="telefono">Teléfono:</label>
-<input type="tel" id="telefono" name="telefono">
+      <!-- ✅ Agregamos el id -->
+      <form id="contactForm"
+        action="https://formspree.io/f/xanpndeg"
+        method="POST" 
+        class="form-contacto"
+      >
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-<label for="email">Correo electrónico:</label>
-<input type="email" id="email" name="email" required>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
 
-<label for="mensaje">Consulta:</label>
-<textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
 
-<button type="submit">Enviar</button>
-</form>
+        <label for="mensaje">Consulta:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p id="status"></p>
   
       <p>Email: <a href="mailto:greennetworkseg@gmail.com">greennetworkseg@gmail.com</a></p>
       <p>Teléfono: +54 9 11 4076 0825</p>
@@ -55,5 +60,33 @@
   <footer>
     © 2025 Green Network – Todos los derechos reservados.
   </footer>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("status");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          status.innerHTML = "✅ Gracias, tu mensaje fue enviado.";
+          form.reset();
+          // 👉 Opcional: redirigir al inicio después de 3 segundos
+          // setTimeout(() => { window.location.href = "/index.html"; }, 3000);
+        } else {
+          status.innerHTML = "❌ Ocurrió un error, intenta de nuevo.";
+        }
+      } catch (error) {
+        status.innerHTML = "⚠️ Error de conexión, revisa tu internet.";
+      }
+    });
+  </script>
 </body>
 </html>
