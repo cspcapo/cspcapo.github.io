@@ -232,3 +232,64 @@ footer{
   cursor: pointer;
   font-size: 1rem;
 }
+/* === Servicios === */
+body {
+  background: linear-gradient(to right, #009688, #00695c);
+  color: #333;
+}
+
+.titulo-servicios {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.subtitulo-servicios {
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #00695c;
+}
+
+.card p {
+  font-size: 0.95em;
+}
+/* Intro de la página de servicios */
+.intro-servicios {
+  text-align: center;
+  margin: 40px 20px 20px 20px;
+  color: #fff;
+}
+
+.titulo-servicios {
+  font-size: clamp(24px, 3vw, 36px);
+  margin-bottom: 10px;
+}
+
+.subtitulo-servicios {
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: #f0f0f0;
+}
