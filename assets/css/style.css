@@ -9,11 +9,12 @@ body{
   flex-direction:column;
   min-height:100vh;
 }
+}
 header {
     display: flex;
     flex-direction: column; /* Logo + nav en columna para que quede centrado */
     align-items: center;
-    background: #333;
+    background: #333333;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -103,10 +104,10 @@ header {
     font-size: 1.2rem;
   }
 }
-/*  
+  
 header{
-  background:#a2aaaa;
-  color:#1b1818;
+  /*background:#a2aaaa;
+  color:#1b1818;*/
   padding:16px 24px;
   display:flex;
   align-items:center;
@@ -119,7 +120,7 @@ nav a{
   text-decoration:none;
   font-weight:600;
 }
-*/  
+  
 
 main{
   flex:1;
@@ -232,15 +233,15 @@ footer{
   cursor: pointer;
   font-size: 1rem;
 }
-/* === Servicios === */
+
 body {
-  background: linear-gradient(to right, #009688, #00695c);
+  background: linear-gradient(to right, #111111, #000807);/* === color de fondo === */
   color: #333;
 }
-
+/* === Servicios === */
 .titulo-servicios {
   text-align: center;
-  color: #fff;
+  color: #e2d9d9;
   margin-top: 20px;
 }
 
@@ -259,19 +260,19 @@ body {
 .card {
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(4, 3, 17, 0.1);
   padding: 20px;
   text-align: center;
   transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .card h3 {
   margin-bottom: 10px;
-  color: #00695c;
+  color: #f3f8f8;
 }
 
 .card p {
